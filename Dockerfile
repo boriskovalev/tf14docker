@@ -70,7 +70,7 @@ RUN pip --no-cache-dir install \
    python -m ipykernel.kernelspec
 
 # Download and pip install a TensorFlow v1.4 package with verbs support
-RUN git clone https://github.com/boriskovalev/Tensorflow-mlnx.git && \
+RUN git clone https://github.com/boriskovalev/tf14docker.git && \
     pip --no-cache-dir install --upgrade /tf14docker/tensorflow-1.4.0-cp27-cp27mu-linux_x86_64.whl && \
     rm -rf /tf14docker/tensorflow-1.4.0-cp27-cp27mu-linux_x86_64.whl && \
     rm -rf /pip && \
